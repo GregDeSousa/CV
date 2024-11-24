@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+header {
+    background-image: url('/images/05.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+header p {
+    font-size: 1.2em;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+}
+section {
+    margin: 20px 0;
+}
+#about {
+    text-align: center;
+}
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.project:hover {
+    transform: scale(1.03);
+}
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.project .content {
+    padding: 15px;
+}
+.project h3 {
+    padding-top: -10px;
+    margin-top: 0;
+}
+.project p {
+    font-size: 12px;
+    margin-top: -20px;
+}
+.view-more {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.view-more:hover {
+    background: #0056b3;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-top: 20px;
+}
+
+#project1{
+    margin-left: 80px;
+    width: 60%;
+    height: 50%;
+}
+
+#project2{
+
+    width: 100%;
+    height: 50%;
+}
+
+#licenses ul {
+    list-style-type: none; /* Removes the dots */
+    padding: 10px; /* Optional: Removes default padding on the list */
+    margin: 0; /* Optional: Removes default margin on the list */
+}
+.licenses{
+    display: flex;
+    gap: 20px; /* Space between divs */
+}
+.b1{
+    border: none;
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.b2{
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.b1:hover{
+        transform: scale(1.03);
+}
+
+.b2:hover{
+    transform: scale(1.03);
+}
+
+
+#badge1{
+    margin-left: 80px;
+    width: 50%;
+    height: 40%;
+}
+
+#badge2{
+    margin-left: 80px;
+    width: 50%;
+    height: 40%;
+}
+
+.round-photo img {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits perfectly */
+    border: 2px solid #213a56; /* Optional: Add a border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
