@@ -6,9 +6,9 @@ body {
     color: #333;
 }
 header {
-    background-image: url('/images/05.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the image */
+    background-image: url('/images/05.jpg');
+    background-size: cover;
+    background-position: center; 
     color: white;
     padding: 1.5em 0;
     text-align: center;
@@ -94,13 +94,13 @@ footer {
 }
 
 #licenses ul {
-    list-style-type: none; /* Removes the dots */
-    padding: 10px; /* Optional: Removes default padding on the list */
-    margin: 0; /* Optional: Removes default margin on the list */
+    list-style-type: none; 
+    padding: 10px; 
+    margin: 0; 
 }
 .licenses{
     display: flex;
-    gap: 20px; /* Space between divs */
+    gap: 20px;
 }
 .b1{
     border: none;
@@ -138,10 +138,10 @@ footer {
 }
 
 .round-photo img {
-    width: 150px; /* Set the width of the image */
-    height: 150px; /* Set the height of the image */
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image fits perfectly */
-    border: 2px solid #213a56; /* Optional: Add a border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 2px solid #213a56; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
