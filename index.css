@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 header {
-    background-image: url('/images/05.jpg');
+    background-image: url('/images/bg.jpg');
     background-size: cover;
     background-position: center; 
     color: white;
@@ -35,8 +35,18 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    border-top: 2px solid rgb(110, 110, 110); 
+    border-bottom: 2px solid rgb(110, 110, 110);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-left: none;
+    border-right: none; 
 }
 .project {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
     border: 1px solid #ddd;
     border-radius: 12px;
     overflow: hidden;
@@ -62,8 +72,20 @@ section {
     font-size: 12px;
     margin-top: -20px;
 }
+
+.content p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Ensures text expands to fill available space */
+}
+
 .view-more {
-    display: inline-block;
+    align-self: flex-start; /* Aligns button to the start of the content */
+    margin-top: auto; /* Pushes it to the bottom */
+    width: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
     text-decoration: none;
     color: white;
     background: #007bff;
@@ -81,22 +103,30 @@ footer {
     margin-top: 20px;
 }
 
-#project1{
-    margin-left: 80px;
-    width: 60%;
+.project img{
+    align-items: center;
+    width: 100%;
     height: 50%;
+    max-width: 500px;
+    max-height: 250px;
 }
 
-#project2{
+#project1{
+    max-width: 300px;
+    max-height: 320px;
+}
+
+/* #project2{
 
     width: 100%;
     height: 50%;
-}
+} */
 
 #licenses ul {
     list-style-type: none; 
     padding: 10px; 
     margin: 0; 
+    border: #333;
 }
 .licenses{
     display: flex;
