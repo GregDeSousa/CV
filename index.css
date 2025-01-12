@@ -47,11 +47,16 @@ section {
     flex-direction: column;
     position: relative;
     align-items: center;
+    justify-content: center;
     border: 1px solid #ddd;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+
+.project a{
+    align-self: center;
 }
 .project:hover {
     transform: scale(1.03);
@@ -86,6 +91,8 @@ section {
     width: 30%;
     margin-left: 5%;
     margin-bottom: 5%;
+    align-items: center;
+    text-align: center;
     text-decoration: none;
     color: white;
     background: #007bff;
@@ -128,17 +135,50 @@ footer {
     margin: 0; 
     border: #333;
 }
+
+
+
+
 .licenses{
     display: flex;
     gap: 20px;
 }
+
+
+
+#licenses ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    width: 98%;
+    padding: 12px;
+    margin-bottom: 15px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease;
+}
+#licenses ul li p{
+    width: 75%;
+}
+#licenses ul li strong{
+    width: 12%;
+    min-width: 100px;
+}
+
+#licenses ul li:hover {
+    transform: scale(1.02); /* Slightly enlarges the list item on hover */
+    border-color: #007bff; /* Changes border color on hover */
+}
+
+
+
 .b1{
     border: none;
     overflow: hidden;
 
     transition: transform 0.3s ease;
-    padding-top: 80px;
-    padding-bottom: 30px;
 }
 .b2{
     border: none;
@@ -156,15 +196,13 @@ footer {
 
 
 #badge1{
-    margin-left: 80px;
-    width: 50%;
-    height: 40%;
+    width: 100px;
+    height: 100px;
 }
 
 #badge2{
-    margin-left: 80px;
-    width: 50%;
-    height: 40%;
+    width: 100px;
+    height: 100px;
 }
 
 .round-photo img {
